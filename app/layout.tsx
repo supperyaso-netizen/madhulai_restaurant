@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     description: 'A celebration of flavour and freshness. Timeless vintage dining with organic multi-cuisine dishes in the heart of Udumalpet.',
     type: 'website',
     locale: 'en_IN',
-    images: ['/shop.jpg'],
+    images: ['/pc.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MADHULAI | Timeless Vintage Restaurant',
     description: 'Timeless vintage dining with authentic organic multi-cuisine dishes in Udumalpet.',
-    images: ['/shop.jpg'],
+    images: ['/pc.png'],
   },
   other: {
     'mobile-web-app-capable': 'yes',
@@ -58,6 +58,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+      <head>
+        <link rel="preload" as="image" href="/pc.png" media="(min-width: 768px)" fetchPriority="high" />
+        <link rel="preload" as="image" href="/mobile.png" media="(max-width: 767px)" fetchPriority="high" />
+      </head>
       <body className="bg-deep-black text-warm-white antialiased">
         <Script id="prevent-zoom" strategy="beforeInteractive">{`
           (function() {

@@ -53,9 +53,9 @@ export default function Reservation() {
           </p>
           <a
             href={`tel:${restaurant.phoneRaw}`}
-            className="inline-flex items-center gap-3 text-3xl md:text-5xl font-bold text-warm-white font-[family-name:var(--font-display)] tracking-tight hover:text-soft-amber transition-colors"
+            className="flex items-center justify-center flex-wrap gap-1 sm:gap-3 text-2xl sm:text-3xl md:text-5xl font-bold text-warm-white font-[family-name:var(--font-display)] tracking-tight hover:text-soft-amber transition-colors"
           >
-            <Phone size={20} className="text-soft-amber" />
+            <Phone size={18} className="text-soft-amber" />
             {phoneDigits.map((char, i) => (
               <motion.span
                 key={i}
