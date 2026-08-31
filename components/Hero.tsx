@@ -101,8 +101,8 @@ function HeroStatic() {
           <h1 className="font-[family-name:var(--font-display)] text-[2.5rem] sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] font-bold leading-[0.95] tracking-[-0.03em] text-warm-white">
             Timeless
             <br />
-            <span className="font-light italic text-soft-amber">Vintage</span>
-            <span className="text-warm-white/70 font-light"> Dining</span>
+            <span className="text-soft-amber">Vintage</span>
+            <span className="text-warm-white/70"> Dining</span>
           </h1>
           <p className="mt-6 sm:mt-7 text-warm-white/60 text-sm sm:text-base md:text-lg tracking-[0.15em] uppercase font-[family-name:var(--font-body)]">
             Where timeless charm meets memorable flavours
@@ -241,8 +241,8 @@ function HeroAnimated() {
           >
             Timeless
             <br />
-            <span className="font-light italic text-soft-amber">Vintage</span>
-            <span className="text-warm-white/70 font-light"> Dining</span>
+            <span className="text-soft-amber">Vintage</span>
+            <span className="text-warm-white/70"> Dining</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
