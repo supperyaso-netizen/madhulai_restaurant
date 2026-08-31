@@ -30,9 +30,15 @@ function HeroStatic() {
     >
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/shop.jpg"
-          alt="Madhulai Timeless Vintage Restaurant — vintage dining room"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          src="/pc.png"
+          alt="Madhulai Timeless Vintage Restaurant — vintage stone entrance"
+          className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+          fetchPriority="high"
+        />
+        <img
+          src="/mobile.png"
+          alt="Madhulai Timeless Vintage Restaurant — vintage stone entrance"
+          className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/70" />
@@ -195,9 +201,15 @@ function HeroAnimated() {
           transition={{ duration: 1.8, ease: [0.77, 0, 0.175, 1] }}
         >
           <img
-            src="/shop.jpg"
-            alt="Madhulai Timeless Vintage Restaurant — vintage dining room"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            src="/pc.png"
+            alt="Madhulai Timeless Vintage Restaurant — vintage stone entrance"
+            className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+            fetchPriority="high"
+          />
+          <img
+            src="/mobile.png"
+            alt="Madhulai Timeless Vintage Restaurant — vintage stone entrance"
+            className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
             fetchPriority="high"
           />
         </motion.div>
